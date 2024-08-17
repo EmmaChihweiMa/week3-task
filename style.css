@@ -1,0 +1,207 @@
+
+
+/*----base-----*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /*outline: solid 1px black;*/
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+    transition: opacity 0.5s;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+/* header & footer */
+.header {
+  color: white;
+  padding: 16px 0;
+  width: 100%;
+  background-color: #AA0601;
+}
+
+.header .logo {
+  position: relative;
+  width: 80px;
+  height: 48px;
+  text-indent: 101%;
+  overflow: hidden;
+  background-image: url("/img/Web\ Layout\ Training\ Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header .logo a {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header-wrapper {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .menu {
+  font-size: 20px;
+  align-content: center;
+}
+.header .menu-item a {
+  padding: 8px 32px;
+  font-size: 20px;
+}
+@media (max-width: 767px){
+  .header{
+    padding: 0;
+  }
+  .header .logo{
+    margin: 16px 12px;
+  }
+  .header-wrapper{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header .menu{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .header .menu-item{
+    text-align: center;
+    padding: 0;
+    width: 50%;
+  }
+  .header .menu-item a{
+    border: solid 1px white;
+    padding: 12px 0;
+    width: 100%;
+  }
+}
+
+.footer{
+  color: white;
+  padding-top: 48px;
+  padding-bottom: 32px;
+  background-color: #AA0601;
+}
+.footer-left{
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+.footer .menu{
+  margin-bottom: 26px;
+}
+.footer .menu-item  a{
+  padding: 12px 32px;
+}
+.footer .footer-link-sns img{
+  width: 48px;
+}
+.footer .footer-link-sns a{
+  padding: 0 16px;
+}
+.footer .contact-list{
+  font-size: 36px;
+}
+.footer .contact-list .material-symbols-outlined{
+  font-size: 36px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.footer .contact-list li:not(last-child) { /*對所有元素套用 CSS，最後一個元素除外*/
+  margin-bottom: 8px;
+}
+.footer .copyright{
+  justify-content: space-between;
+}
+.footer .copyright-text{
+  margin-bottom: 4px;
+}
+.footer .legal-list a{
+  padding: 0 24px;
+}
+@media (max-width:992px) {
+  .footer .footer-link-sns a{
+    padding: 0 8px;
+  }
+}
+@media (max-width:576px) {
+  .footer .menu{
+    display: none;
+  }
+  .footer .contact-list{
+    font-size: 16px;
+  }
+  .footer .contact-list .material-symbols-outlined{
+    font-size: 24px;
+    margin-right: 8px;
+  }
+  .footer .footer-link-sns img{
+    width: 24px;
+  }
+  .footer .copyright{
+    flex-direction: column;
+  }
+  .footer .legal-list{
+    flex-direction: column;
+  }
+  .footer .legal-list a{
+    padding: 4px 0;
+  }
+}
+
+
+/* utilities */
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+@media(max-width: 992px) {
+  .container{
+    max-width: 720px;
+  }
+}
+@media (max-width: 576px) {
+  .container{
+    max-width: 372px;
+  }
+}
+.container-md-fluid {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+.container-sm-full{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+@media (max-width: 767px) {
+  .container-sm-full {padding: 0;}
+}
+
+.d-flex{
+  display: flex;
+}
+.col-red{
+  color: #AA0601;
+}
+.col-white{
+  color: #FFFFFF;
+}
