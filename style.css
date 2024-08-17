@@ -37,7 +37,7 @@ body{
   height: 48px;
   text-indent: 101%;
   overflow: hidden;
-  background-image: url("/img/Web\ Layout\ Training\ Logo.png");
+  background-image: url("img/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
